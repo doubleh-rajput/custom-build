@@ -2,7 +2,3 @@
 .vscode
 build
 yarn-error.log
-webpack
-index.html
-index.js
-css
