@@ -3031,6 +3031,11 @@ jest-worker@^26.3.0, jest-worker@^26.6.2:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
+jquery@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.0.tgz#d0e84ebbf199da51bf7ec39307f19b35754e9cba"
+  integrity sha1-0OhOu/GZ2lG/fsOTB/GbNXVOnLo=
+
 js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -4520,6 +4525,11 @@ simple-swizzle@^0.2.2:
   integrity sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
   dependencies:
     is-arrayish "^0.3.1"
+
+sizzle@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/sizzle/-/sizzle-2.2.1.tgz#2781a98aa0d728d1df646b79b699b3baa0653b70"
+  integrity sha1-J4GpiqDXKNHfZGt5tpmzuqBlO3A=
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
