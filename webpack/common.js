@@ -1,12 +1,13 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 
 module.exports = {
   entry: {
-    app: "./index.js",
+    app: "./src/index.js",
   },
   output: {
-    filename: "[name]-build.js",
+    filename: "app.min.js",
     path: path.resolve("./build"),
   },
   module: {
@@ -33,8 +34,14 @@ module.exports = {
       filename: "index.html",
       template: "index.html",
     }),
+    new webpack.ProvidePlugin({
+      React: "react"
+    }),
+    new webpack.DefinePlugin({
+      __REACT_DEVTOOLS_GLOBAL_HOOK__: "({ isDisabled: true })"
+    })
   ],
   resolve: {
-    extensions: [".js", '.json'],
+    extensions: [".js", '.json', 'jsx'],
   },
 };

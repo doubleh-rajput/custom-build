@@ -33,8 +33,8 @@ module.exports = merge(common, {
     new webpack.BannerPlugin({
       banner: `
 /* 
- * Written by Webpack <doublehrajput@gmail.com>, ${new Date(Date.now()).toLocaleString()}
- */
+* Written by Webpack <doublehrajput@gmail.com>, ${new Date(Date.now()).toLocaleString()}
+*/
       `,
     }),
 
