@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -6,7 +7,7 @@ module.exports = {
     app: "./index.js",
   },
   output: {
-    filename: "[name]-build.js",
+    filename: "jquery-bootstrap-build.js",
     path: path.resolve("./build"),
   },
   module: {
@@ -32,6 +33,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "index.html",
+    }),
+    new webpack.ProvidePlugin({
+      // Tabulator: ['tabulator-tables/src/js/core.js', 'Tabulator'],
+      jQuery: path.resolve("./libs/jquery"),
+      $: path.resolve("./libs/jquery"),
     }),
   ],
   resolve: {
