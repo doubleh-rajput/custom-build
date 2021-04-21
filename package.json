@@ -26,6 +26,7 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+    "bootstrap": "3.3.7",
     "jquery": "2.2.0",
     "sizzle": "2.2.1"
   }
